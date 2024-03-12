@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="view.ScoreBoard">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;"
+                    BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="214.0" layoutY="24.0" text="Score Board" textFill="#f49c20">
+                    <font>
+                        <Font name="System Bold" size="30.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="one" layoutX="21.0" layoutY="81.0" prefHeight="19.0" prefWidth="568.0"
+                       style="-fx-background-color: #eaff00;">
+                    <font>
+                        <Font size="13.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="two" layoutX="21.0" layoutY="107.0" prefHeight="19.0" prefWidth="568.0"
+                       style="-fx-background-color: #6f7977;">
+                    <font>
+                        <Font size="13.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="three" layoutX="20.0" layoutY="135.0" prefHeight="19.0" prefWidth="568.0"
+                       style="-fx-background-color: #b97038;">
+                    <font>
+                        <Font size="13.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="four" layoutX="19.0" layoutY="164.0" prefHeight="19.0" prefWidth="558.0"
+                       textFill="#f49c20">
+                    <font>
+                        <Font size="13.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="five" layoutX="19.0" layoutY="191.0" prefHeight="19.0" prefWidth="562.0"
+                       textFill="#f49c20">
+                    <font>
+                        <Font size="13.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="six" layoutX="18.0" layoutY="218.0" prefHeight="19.0" prefWidth="566.0"
+                       textFill="#f49c20">
+                    <font>
+                        <Font size="13.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="seven" layoutX="18.0" layoutY="243.0" prefHeight="19.0" prefWidth="571.0"
+                       textFill="#f49c20">
+                    <font>
+                        <Font size="13.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="eight" layoutX="18.0" layoutY="268.0" prefHeight="19.0" prefWidth="573.0"
+                       textFill="#f49c20">
+                    <font>
+                        <Font size="13.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="nine" layoutX="16.0" layoutY="296.0" prefHeight="19.0" prefWidth="577.0"
+                       textFill="#f49c20">
+                    <font>
+                        <Font size="13.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="ten" layoutX="19.0" layoutY="327.0" prefHeight="19.0" prefWidth="566.0"
+                       textFill="#f49c20">
+                    <font>
+                        <Font size="13.0"/>
+                    </font>
+                </Label>
+                <Button fx:id="back" layoutX="533.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#back"
+                        style="-fx-background-color: #f49c20;" text="back"/>
+                <Button fx:id="refresh" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#refresh"
+                        style="-fx-background-color: #f49c20;" text="refresh"/>
+                <CheckBox fx:id="dif1" layoutX="14.0" layoutY="51.0" mnemonicParsing="false" onMouseClicked="#difficulty" prefHeight="9.0" prefWidth="19.0"
+                          style="-fx-background-color: #ffffff;" text="1" textFill="#f49c20"/>
+                <CheckBox fx:id="dif2" layoutX="55.0" layoutY="51.0" mnemonicParsing="false" onMouseClicked="#difficulty" prefHeight="9.0" prefWidth="19.0"
+                          style="-fx-background-color: #ffffff;" text="2" textFill="#f49c20"/>
+                <CheckBox fx:id="dif3" layoutX="98.0" layoutY="51.0" mnemonicParsing="false" onMouseClicked="#difficulty" prefHeight="9.0" prefWidth="19.0"
+                          style="-fx-background-color: #ffffff;" text="3" textFill="#f49c20"/>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

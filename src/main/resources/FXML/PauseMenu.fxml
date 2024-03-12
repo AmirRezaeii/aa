@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PauseMenu">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="214.0" layoutY="26.0" text="Pause Menu" textFill="#f49c20">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Button fx:id="finish" layoutX="87.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#finish" style="-fx-background-color: #f49c20;" text="finish" />
+                <Button fx:id="restartSinglePlayer" layoutX="243.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#restartSinglePlayer" style="-fx-background-color: #f49c20;" text="restart single player" />
+                <Button fx:id="save" layoutX="450.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#save" style="-fx-background-color: #f49c20;" text="save" />
+                <Button fx:id="sound2" layoutX="450.0" layoutY="259.0" mnemonicParsing="false" onMouseClicked="#sound2" style="-fx-background-color: #f49c20;" text="sound 2" />
+                <Button fx:id="sound1" layoutX="450.0" layoutY="221.0" mnemonicParsing="false" onMouseClicked="#sound1" style="-fx-background-color: #f49c20;" text="sound 1" />
+                <Button fx:id="sound3" layoutX="450.0" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#sound3" style="-fx-background-color: #f49c20;" text="sound 3" />
+                <Button fx:id="mute" layoutX="458.0" layoutY="346.0" mnemonicParsing="false" onMouseClicked="#mute" style="-fx-background-color: #f49c20;" text="mute" />
+                <Label layoutX="399.0" layoutY="169.0" text="select soundtrack" textFill="#f49c20">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="87.0" layoutY="169.0" text="keys gide" textFill="#f49c20">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="39.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="restartMultiPlayer" layoutX="242.0" layoutY="143.0" mnemonicParsing="false" onMouseClicked="#restartMultiPlayer" style="-fx-background-color: #f49c20;" text="restart multi player" />
+            <Label layoutX="81.0" layoutY="213.0" text="go right user1" textFill="WHITE" />
+            <Label layoutX="85.0" layoutY="254.0" text="go left user1" textFill="WHITE" />
+            <Label layoutX="81.0" layoutY="296.0" text="go right user2" textFill="WHITE" />
+            <Label layoutX="85.0" layoutY="337.0" text="go left user2" textFill="WHITE" />
+            <Label layoutX="251.0" layoutY="215.0" text="shoot user1" textFill="WHITE" />
+            <Label layoutX="251.0" layoutY="254.0" text="shoot user2" textFill="WHITE" />
+            <Label layoutX="266.0" layoutY="296.0" text="pause" textFill="WHITE" />
+            <Label layoutX="266.0" layoutY="337.0" text="freeze" textFill="WHITE" />
+            <ImageView fitHeight="34.0" fitWidth="40.0" layoutX="33.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/A.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="40.0" layoutX="197.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Space.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="40.0" layoutX="197.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Enter.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="40.0" layoutX="197.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/P.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="40.0" layoutX="197.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Tab.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="40.0" layoutX="33.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Right.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="40.0" layoutX="33.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Left.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="40.0" layoutX="33.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/D.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

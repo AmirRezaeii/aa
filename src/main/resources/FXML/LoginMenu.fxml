@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginMenu">
+    <center>
+        <AnchorPane prefHeight="118.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="216.0" layoutY="42.0" text="Login Menu" textAlignment="CENTER" textFill="#f49c20">
+                    <font>
+                        <Font name="System Bold" size="30.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="144.0" layoutY="151.0" text="Username" textFill="WHITE">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="146.0" layoutY="214.0" text="Password" textFill="WHITE">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </Label>
+                <PasswordField fx:id="password" layoutX="270.0" layoutY="214.0" promptText="Password"/>
+                <TextField fx:id="username" layoutX="271.0" layoutY="151.0" promptText="Username"/>
+                <Button fx:id="login" layoutX="325.0" layoutY="274.0" mnemonicParsing="false" onMouseClicked="#login"
+                        prefHeight="26.0" prefWidth="59.0" style="-fx-background-color: #f49c20;" text="Login"/>
+                <Button fx:id="regiseter" layoutX="216.0" layoutY="274.0" mnemonicParsing="false"
+                        onMouseClicked="#register" style="-fx-background-color: #f49c20;" text="Register"/>
+                <Button fx:id="playAsGuest" layoutX="258.0" layoutY="333.0" mnemonicParsing="false"
+                        onMouseClicked="#playAsGuest" style="-fx-background-color: #f49c20;" text="Play as guest"/>
+                <Label fx:id="error" layoutX="215.0" layoutY="109.0" prefHeight="19.0" prefWidth="170.0"
+                       textAlignment="CENTER" textFill="RED">
+                    <font>
+                        <Font size="13.0"/>
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
