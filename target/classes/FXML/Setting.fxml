@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="view.Setting">
+    <center>
+        <AnchorPane fx:id="kos" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;"
+                    BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="249.0" layoutY="40.0" text="Setting" textFill="#f49c20">
+                    <font>
+                        <Font name="System Bold" size="30.0"/>
+                    </font>
+                </Label>
+                <Button fx:id="back" layoutX="534.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#back"
+                        style="-fx-background-color: #f49c20;" text="back"/>
+                <Button fx:id="mute" layoutX="60.0" layoutY="335.0" mnemonicParsing="false" onMouseClicked="#mute"
+                        style="-fx-background-color: #f49c20;" text="mute"/>
+                <Button fx:id="language" layoutX="136.0" layoutY="335.0" mnemonicParsing="false"
+                        onMouseClicked="#language" style="-fx-background-color: #f49c20;" text="language"/>
+                <Button fx:id="color" layoutX="233.0" layoutY="335.0" mnemonicParsing="false" onMouseClicked="#color"
+                        style="-fx-background-color: #f49c20;" text="color"/>
+                <Label layoutX="83.0" layoutY="140.0" text="difficulty" textFill="#f49c20">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="78.0" layoutY="193.0" text="ball count" textFill="#f49c20">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="98.0" layoutY="238.0" text="map" textFill="#f49c20">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="error" layoutX="252.0" layoutY="93.0" prefHeight="19.0" prefWidth="96.0" textFill="RED">
+                    <font>
+                        <Font size="13.0"/>
+                    </font>
+                </Label>
+                <CheckBox fx:id="difficulty1" layoutX="197.0" layoutY="144.0" mnemonicParsing="false"
+                          onMouseClicked="#difficulty" text="1" textFill="#f49c20"/>
+                <CheckBox fx:id="difficulty2" layoutX="311.0" layoutY="144.0" mnemonicParsing="false"
+                          onMouseClicked="#difficulty" text="2" textFill="#f49c20"/>
+                <CheckBox fx:id="difficulty3" layoutX="423.0" layoutY="144.0" mnemonicParsing="false"
+                          onMouseClicked="#difficulty" text="3" textFill="#f49c20"/>
+                <CheckBox fx:id="ballCount12" layoutX="323.0" layoutY="197.0" mnemonicParsing="false"
+                          onMouseClicked="#ballCount" text="12" textFill="#f49c20"/>
+                <CheckBox fx:id="ballCount11" layoutX="258.0" layoutY="197.0" mnemonicParsing="false"
+                          onMouseClicked="#ballCount" text="11" textFill="#f49c20"/>
+                <CheckBox fx:id="ballCount10" layoutX="194.0" layoutY="197.0" mnemonicParsing="false"
+                          onMouseClicked="#ballCount" text="10" textFill="#f49c20"/>
+                <CheckBox fx:id="ballCount13" layoutX="387.0" layoutY="197.0" mnemonicParsing="false"
+                          onMouseClicked="#ballCount" text="13" textFill="#f49c20"/>
+                <CheckBox fx:id="ballCount14" layoutX="453.0" layoutY="197.0" mnemonicParsing="false"
+                          onMouseClicked="#ballCount" text="14" textFill="#f49c20"/>
+                <CheckBox fx:id="ballCount15" layoutX="518.0" layoutY="197.0" mnemonicParsing="false"
+                          onMouseClicked="#ballCount" text="15" textFill="#f49c20"/>
+                <CheckBox fx:id="map3" layoutX="423.0" layoutY="242.0" mnemonicParsing="false" onAction="#map" text="3"
+                          textFill="#f49c20"/>
+                <CheckBox fx:id="map2" layoutX="308.0" layoutY="242.0" mnemonicParsing="false" onAction="#map" text="2"
+                          textFill="#f49c20"/>
+                <CheckBox fx:id="map1" layoutX="197.0" layoutY="242.0" mnemonicParsing="false" onAction="#map" text="1"
+                          textFill="#f49c20"/>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

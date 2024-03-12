@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.Pane?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="view.ProfileMenu">
+    <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;"
+                BorderPane.alignment="CENTER">
+        <children>
+            <Label layoutX="208.0" layoutY="41.0" text="Profile Menu" textFill="#f49c20">
+                <font>
+                    <Font name="System Bold" size="30.0"/>
+                </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="150.0" layoutY="187.0" promptText="new username"/>
+            <TextField fx:id="username" layoutX="150.0" layoutY="256.0" promptText="new password"/>
+            <Button fx:id="changeUsername" layoutX="391.0" layoutY="187.0" mnemonicParsing="false"
+                    onMouseClicked="#changeUsername" style="-fx-background-color: #f49c20;" text="change"/>
+            <Button fx:id="changePassword" layoutX="391.0" layoutY="256.0" mnemonicParsing="false"
+                    onMouseClicked="#changePassword" style="-fx-background-color: #f49c20;" text="change"/>
+            <Button fx:id="logout" layoutX="274.0" layoutY="321.0" mnemonicParsing="false" onMouseClicked="#logout"
+                    style="-fx-background-color: #f49c20;" text="logout"/>
+            <Button fx:id="deleteAccount" layoutX="497.0" layoutY="360.0" mnemonicParsing="false"
+                    onMouseClicked="#deleteAccount" style="-fx-background-color: #f49c20;" text="delete account"/>
+            <Button fx:id="changeAvatar" layoutX="14.0" layoutY="89.0" mnemonicParsing="false"
+                    onMouseClicked="#changeAvatar" style="-fx-background-color: #f49c20;" text="change avatar"/>
+            <Label fx:id="error" layoutX="208.0" layoutY="105.0" prefHeight="18.0" prefWidth="183.0" textFill="RED"/>
+            <ImageView fx:id="avatar" fitHeight="44.0" fitWidth="47.0" layoutX="36.0" layoutY="19.0" pickOnBounds="true"
+                       preserveRatio="true"/>
+            <Button fx:id="back" layoutX="544.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#back"
+                    style="-fx-background-color: #f49c20;" text="back"/>
+        </children>
+    </AnchorPane>
+</Pane>
